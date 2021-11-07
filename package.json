@@ -1,0 +1,19 @@
+{
+  "name": "proxy-pattern-mrmeeseks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoanRibot/proxy-pattern-mrMeeseks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoanRibot/proxy-pattern-mrMeeseks/issues"
+  },
+  "homepage": "https://github.com/JoanRibot/proxy-pattern-mrMeeseks#readme"
+}

@@ -24,9 +24,9 @@ box2.name = "Jen's box";
 console.log(box.name);
 
 
-// // creamos dos Meeseeks
-// // los Meeseeks son distintos
-// // el prototipo no cambia
+// creamos dos Meeseeks
+// los Meeseeks son distintos
+// el prototipo no cambia
 var mrMeeseeks = box.createMrMeeseeks();
 
 var mrMeeseeks2 = box.createMrMeeseeks();
@@ -37,7 +37,7 @@ console.assert(mrMeeseeks.messageOnCreate != mrMeeseeks2.messageOnCreate);
 
 // obtengo el meeseeks proto y compruebo que su mensaje
 // onCreate no ha cambiado: shadowing de la variable messageOnCreate
-var proto = box.getProtoMeeseeks();
+var proto = box.getProtoMeeseks();
 console.assert(proto.messageOnCreate == "I'm Mr Meeseeks! Look at meeee!");
 console.assert(proto != mrMeeseeks);
 
@@ -46,43 +46,43 @@ console.assert(proto != mrMeeseeks);
 // para practicar este tipo de estructura
 var reality = [];
 
-// // Historia de usuario: Jerry press button
+// Historia de usuario: Jerry press button
 console.log("\n ### Jerry press button ### \n");
 
 box.pressButton(reality);
 console.assert(reality.length == 1);
 
-// console.log("Rick: Open Jerry's stupid mayonnaise jar");
-// var lastMrMeeseeks = reality.length - 1;
-// reality[lastMrMeeseeks].makeRequest("open", "Jerry's stupid mayonnaise jar");
-// reality[lastMrMeeseeks].fulfillRequest();
-// // meeseeks deja de existir
-// reality.pop();
-// console.assert(reality.length == 0);
+console.log("Rick: Open Jerry's stupid mayonnaise jar");
+var lastMrMeeseeks = reality.length - 1;
+reality[lastMrMeeseeks].makeRequest("open", "Jerry's stupid mayonnaise jar");
+reality[lastMrMeeseeks].fulfillRequest();
+// meeseeks deja de existir
+reality.pop();
+console.assert(reality.length == 0);
 
-// // Historia de usuario: Summer press button
-// console.log("\n ### Summer press button ### \n");
+// Historia de usuario: Summer press button
+console.log("\n ### Summer press button ### \n");
 
-// box.pressButton(reality);
-// console.assert(reality.length == 1);
-// console.log("Summer: I wanna be popular at school!");
-// reality[lastMrMeeseeks].makeRequest("be popular", "at school");
-// reality[lastMrMeeseeks].fulfillRequest();
-// reality.pop();
-// console.assert(reality.length == 0);
+box.pressButton(reality);
+console.assert(reality.length == 1);
+console.log("Summer: I wanna be popular at school!");
+reality[lastMrMeeseeks].makeRequest("be popular", "at school");
+reality[lastMrMeeseeks].fulfillRequest();
+reality.pop();
+console.assert(reality.length == 0);
 
-// // // Historia de usuario: Beth press button
-// console.log("\n ### Beth press button ### \n");
+// // Historia de usuario: Beth press button
+console.log("\n ### Beth press button ### \n");
 
-// box.pressButton(reality);
-// console.log("Beth: I wanna be a more complete woman!");
-// reality[lastMrMeeseeks].makeRequest("be a more complete", "woman");
-// reality[lastMrMeeseeks].fulfillRequest();
-// reality.pop();
-// console.assert(reality.length == 0);
+box.pressButton(reality);
+console.log("Beth: I wanna be a more complete woman!");
+reality[lastMrMeeseeks].makeRequest("be a more complete", "woman");
+reality[lastMrMeeseeks].fulfillRequest();
+reality.pop();
+console.assert(reality.length == 0);
 
-// // el prototipo no se ha visto alterado con accion
-// // proto.fulfillRequest();  => accion no definido
+// el prototipo no se ha visto alterado con accion
+// proto.fulfillRequest();  => accion no definido
 
 
 // // // Historia de usuario: Jerry y su Mr Meeseeks press button
