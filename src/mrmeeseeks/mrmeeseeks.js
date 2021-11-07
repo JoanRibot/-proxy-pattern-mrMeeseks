@@ -19,6 +19,10 @@ MrMeeseeks.prototype.fulfillRequest = function(){
     console.log(this.wish +" All done!");
 
 }
+MrMeeseeks.prototype.learnRequest = function(prueba, objeto){
+    let execution = prueba(objeto)
+    this.wish = execution();
+}
 var meeseekAboveAll = (function createMeeseek() {
 
     const theMeeseek = new MrMeeseeks();
