@@ -32,25 +32,25 @@ var mrMeeseeks = box.createMrMeeseeks();
 var mrMeeseeks2 = box.createMrMeeseeks();
 mrMeeseeks2.messageOnCreate = "Caaaan dooooo!!";
 
-// console.assert(mrMeeseeks !== mrMeeseeks2);
-// console.assert(mrMeeseeks.messageOnCreate != mrMeeseeks2.messageOnCreate);
+console.assert(mrMeeseeks !== mrMeeseeks2);
+console.assert(mrMeeseeks.messageOnCreate != mrMeeseeks2.messageOnCreate);
 
-// // obtengo el meeseeks proto y compruebo que su mensaje
-// // onCreate no ha cambiado: shadowing de la variable messageOnCreate
-// var proto = box.getProtoMeeseks();
-// console.assert(proto.messageOnCreate == "I'm Mr Meeseeks! Look at meeee!");
-// console.assert(proto != mrMeeseeks);
+// obtengo el meeseeks proto y compruebo que su mensaje
+// onCreate no ha cambiado: shadowing de la variable messageOnCreate
+var proto = box.getProtoMeeseeks();
+console.assert(proto.messageOnCreate == "I'm Mr Meeseeks! Look at meeee!");
+console.assert(proto != mrMeeseeks);
 
-// // creamos Mr Meeseeks con la caja
-// // Los meeseeks se añaden a un array 
-// // para practicar este tipo de estructura
-// var reality = [];
+// creamos Mr Meeseeks con la caja
+// Los meeseeks se añaden a un array 
+// para practicar este tipo de estructura
+var reality = [];
 
 // // Historia de usuario: Jerry press button
-// console.log("\n ### Jerry press button ### \n");
+console.log("\n ### Jerry press button ### \n");
 
-// box.pressButton(reality);
-// console.assert(reality.length == 1);
+box.pressButton(reality);
+console.assert(reality.length == 1);
 
 // console.log("Rick: Open Jerry's stupid mayonnaise jar");
 // var lastMrMeeseeks = reality.length - 1;
